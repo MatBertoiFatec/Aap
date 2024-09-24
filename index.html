@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Plataforma de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        #contact-form button {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suporte</h1>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="response-message" class="hidden">Sua mensagem foi enviada! O prazo de resposta pode variar de 10 á 30 dias. Caso tenha alguma dúvida mais Urgente, ligue para 11999024689 e fale com nossa Central!</div>
+        </section>
+
+        <section id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <button class="faq-question">Como faço para acessar os cursos?</button>
+                <div class="faq-answer hidden">
+                    <p>Você pode acessar os cursos através do painel do aluno após efetuar login.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Esqueci minha senha. O que devo fazer?</button>
+                <div class="faq-answer hidden">
+                    <p>Clique em "Esqueci minha senha" na página de login e siga as instruções.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Como posso entrar em contato com o suporte?</button>
+                <div class="faq-answer hidden">
+                    <p>Você pode entrar em contato conosco através da seção de contato abaixo ou enviando um email para suporte@plataformadecursos.com.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Posso acessar os cursos pelo celular?</button>
+                <div class="faq-answer hidden">
+                    <p>Sim, nossos cursos são compatíveis com dispositivos móveis. Basta acessar o site pelo navegador do seu celular.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Os cursos têm certificado?</button>
+                <div class="faq-answer hidden">
+                    <p>Sim, todos os nossos cursos oferecem certificado de conclusão que você pode baixar e imprimir.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Cursos Online CW. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- chatbot interface-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Suporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chatbot-container">
+        <div id="chatbox" class="hidden">
+            <div id="chatbox-header">Chatbot de Suporte</div>
+            <div id="chat-messages"></div>
+            
+            <form action="/chatbot" method='POST'>
+                <input type="text" name="pergunta" id="chat-input" placeholder="Digite sua mensagem...">
+                <button type="submit" id="chat-send">Enviar</button>
+            </form>
+        </div>
+        <button id="chatbot-toggle">Chat</button>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

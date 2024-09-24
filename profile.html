@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.profile-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.profile-header {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-top: 80px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra no texto */
+}
+
+.profile-info .job-title {
+    font-size: 1.2em;
+    color: #555;
+    margin: 5px 0;
+    background-color: #fff; /* Fundo do texto */
+    padding: 2px 5px; /* Espaçamento ao redor do texto */
+    display: inline-block; /* Para aplicar o fundo apenas ao texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.profile-info .location {
+    font-size: 1em;
+    color: #777;
+    background-color: #fff; /* Fundo do texto */
+    padding: 2px 5px; /* Espaçamento ao redor do texto */
+    display: inline-block; /* Para aplicar o fundo apenas ao texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.profile-details {
+    padding: 20px;
+}
+
+.profile-details section {
+    margin-bottom: 20px;
+}
+
+.profile-details h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra no texto */
+}
+
+.profile-details p {
+    color: #555;
+}
+
+.course-item,
+.progress-item,
+.skills ul {
+    text-align: left; 
+    color: #333; /* Cor do texto */
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    background-color: #e1e9ee;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.progress-fill {
+    background-color: #00796b;
+    height: 100%;
+    border-radius: 5px;
+}
+   
+</style>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="cover-photo">
+                <img src="images/capaexemplo_profile.png" alt="Foto de Capa">
+            </div>
+            <div class="profile-photo">
+                <img src="images/imgcapaexemplo.jpg" alt="Foto do Usuário">
+            </div>
+            <div class="profile-info">
+                <h1>Matheus Garcia Bertoi</h1>
+                <p class="job-title">Nível de aprendizado lvl 10.</p>
+                <p class="location">Barueri, SP, Brasil</p>
+            </div>
+        </div>
+        <div class="profile-details">
+            <section class="courses">
+                <h2>Cursos Concluídos</h2>
+                <div class="course-item">
+                    <h3>Introdução ao Marketing</h3>
+                    <p>Data de Conclusão: 01/05/2024</p>
+                    <p>Certificado: <a href="#">Ver Certificado</a></p>
+                </div>
+                <div class="course-item">
+                    <h3>Curso de Marketing de Conteúdo</h3>
+                    <p>Data de Conclusão: 15/04/2024</p>
+                    <p>Certificado: <a href="#">Ver Certificado</a></p>
+                </div>
+            </section>
+            <section class="progress">
+                <h2>Progresso Atual</h2>
+                <div class="progress-item">
+                    <h3>Curso de Mídias Sociais</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <p>75% concluído</p>
+                </div>
+                <div class="progress-item">
+                    <h3>Curso de SEO.</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%;"></div>
+                    </div>
+                    <p>50% concluído</p>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Direito Cibernético</li>
+                    <li>Gestão do Relacionamento com o Cliente</li>
+                    <li>Direito Cibernético</li>
+                    <li>MKT</li>
+                    <li>MKT DIGITAL</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
